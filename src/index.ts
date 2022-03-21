@@ -8,6 +8,7 @@ class ExpressMaker {
     app: Express
 
     constructor() {
+        console.log('create express app')
         this.app = createApplication()
         this.app.use(helmet())
         this.app.use(cookieParser())
